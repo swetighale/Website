@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,400;1,500&display=swap');
+
+
+:root{
+    --yellow: #f9ca24;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitilize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--yellow);
+    color: #333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+
+body{
+    background: silver;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: 3rem 6rem;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    height:  5px;
+}
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background: var(--yellow);
+}
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100px;
+    width: 35rem;
+    background: #lalala;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 19rem;
+    width: 19rem;
+    border-radius: 60%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: .7rem solid var(--yellow);
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color: #111;
+}
+
+header .user .post{
+    font-size: 2rem;
+    color: #111;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem;
+    background: grey;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background: red;
+}
+
+.heading{
+    font-size: 40px;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3{
+    font-size: 4rem;
+    color: white;
+}
+
+.home h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.home h1 span{
+    color: var(--yellow);
+
+}
+
+.home p{
+    font-size: 2rem;
+    color: #111;
+    padding: 1rem 0;
+}
+
+
+
+@media (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+
+    .home{
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width: 991px){
+    header{
+        left: -120%;
+    }
+
+    header.toggle{
+        left: 0%;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    
+}
+
+@media(max-width: 768px){
+    html{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 400px){
+    header{
+        width: 50vw;
+    }
+}
+
